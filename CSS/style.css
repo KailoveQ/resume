@@ -1,0 +1,192 @@
+.icon {
+    width: 1.5em; height: 1.5em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    margin-right: .5em;
+ }
+.high-light {
+    color: #f60;
+    background: #eeeeee;
+    border-radius: 4px;
+}
+#page {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+header {
+    background: rgb(59, 59, 59);
+    -webkit-print-color-adjust: exact;
+    position: relative;
+    color: white;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    padding: 20px;
+}
+header > h1 {
+    margin: 10px;
+}
+header > p {
+    color: #999999;
+}
+main {
+    padding: 1em;
+    display: flex;
+    color: #666666;
+}
+main > h1,h2,h3,h4,h5 {
+    margin: 10px 0;
+    color: #2397df;
+}
+main > aside {
+    min-width: 30%;
+    position: relative;
+    border-right: 2px solid #cccccc;
+}
+main > .content {
+    flex-grow: 1;
+}
+main > aside > section > div > ul > li {
+    font-size: 14px;
+    margin: 4px 0;
+}
+main > aside > section{
+    padding: 0 10px;
+}
+main > aside > section > div {
+    padding: 10px 0;
+    border-bottom: 2px solid #bbbbbb;
+}
+.avatar {
+   width: 100px; 
+   height: 100px;
+   position: absolute;
+   top: -1em;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   border-radius: 50%;
+   overflow: hidden;
+}
+.avatar > img {
+    max-width: 100%;
+    max-height: 100%;  
+}
+.skills > ul > li {
+    word-break: break-all;
+    list-style: inside;
+}
+.personal {
+    margin-top: 40px;
+}
+.personal > ul > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.personal > ul > li > span:nth-child(2){
+    width: 50%;
+}
+.chat > ul > li {
+    display: flex;
+    align-items: center;
+}
+.more {
+    border: none;
+    padding: 10px 0;
+    border-bottom: 2px solid #bbbbbb;
+}
+.more > ul > li > img {
+    width: 24px;
+    height: 24px;
+}
+.more li {
+    display: flex;
+    align-items: center;
+}
+.more img {
+    margin-right: 10px;
+}
+.content {
+    padding: 0 1em;
+}
+.content section div ul li {
+    font-size: 14px;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.case img {
+    width: 100%;
+    border: 1px dashed #bbbbbb;
+}
+.case .link > a:not(:last-child){
+    border-right: 1px solid #bbbbbb;
+    padding-right: 4px;
+}
+.case li img,.introduction,.achieve {
+    margin-bottom: 2px;
+}
+.link {
+    position: relative;
+}
+.QRcode {
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 10px;
+}
+.QRcode > img {
+    width: 112px;
+    /*height: 140px;*/
+    border: none;
+}
+.QRcode.show {
+    display: block;
+}
+.account_react{
+    right: 0;
+}
+.open-origin img {
+    width: 100%;
+    border: 1px dashed #bbbbbb;
+}
+.education > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.work > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(max-width:500px){
+    #page {
+        width: 100%;
+    }
+    header {
+        min-height: 80px;
+    }
+    header > p,h1 {
+        display: none;
+    }
+    main {
+        flex-direction: column;
+    }
+    main > aside {
+        border-right: none;
+    }
+    .education div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .work > div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
